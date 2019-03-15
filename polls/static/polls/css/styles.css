@@ -1,0 +1,88 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.0 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+
+@import url(bootstrap-tagsinput.css);
+@import url(slider.css);
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+@import url(bootstrap-tagsinput-typeahead.css);
+@import url(footer.css);
+
+
+
+
+.importstatments
+{
+color: green;
+     padding-left: 10px;
+     font-size: 20px;
+       display: inline-block;
+
+
+}
+
+
+.dots
+{
+color: red;
+     padding-left: 20px;
+          font-size: 15px;
+
+
+}
+
+
+#title {
+    border-left: 20px solid lightblue;
+        border-right: 20px solid lightblue;
+
+    background-color: lightgrey;
+    border-radius: 5px;
+    background-size: auto;
+     padding-left: 30px;
+     font-size: 40px;
+}
+
+.panel-heading{
+font-size: 16px;
+}
+
+
+.lb-sm {
+  font-size: 14px;
+}
+
+.lb-md {
+  font-size: 16px;
+}
+
+.lb-lg {
+  font-size: 20px;
+}
+
+#subtext{
+color: white;
+}
+
+.import
+{
+     padding-left: 30px;
+     font-size: 20px;
+       display: inline-block;
+color: black;
+
+}
+
+
+
+
+.red-bg {
+  background-color: #d9534f;
+}
+
+.green-bg{
+  background-color:#5cb85c;
+}

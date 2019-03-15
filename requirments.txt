@@ -1,0 +1,6 @@
+django==1.11.16
+pymongo
+gunicore==19.9.0
+mongosanitizer
+
+

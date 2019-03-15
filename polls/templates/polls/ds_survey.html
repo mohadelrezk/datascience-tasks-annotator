@@ -1,0 +1,365 @@
+{% load static %}
+
+<!-- DOCTYPE html -->
+<html lang="en">
+<head>
+
+    <title>Data Science Survey</title>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="{% static 'polls/css/styles.css' %}">
+
+    <!-- tags input and typeahead-->
+    <script type='text/javascript' src="{% static 'polls/js/bootstrap-tagsinput.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'polls/js/typeahead.bundle.js' %}"></script>
+    <script type='text/javascript' src="{% static 'polls/js/typeahead.js' %}"></script>
+    <!-- slider -->
+    <script type='text/javascript' src="{% static 'polls/js/bootstrap-slider.js' %}"></script>
+    <!-- logic -->
+    <script type='text/javascript' src="{% static 'polls/js/logic.js' %}"></script>
+
+    <script>
+    $(function(){
+      $("#footer").load("footer/");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script>
+//   $(function(){
+//     console.log('heere');
+//       $("input").tagsinput({
+//         typeahead: {
+//           source: ["not", "your", "business"]
+// }
+// });    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+
+    <div id="intro" class="jumbotron">
+
+        <h1>An expert survey on tasks of data science</h1>
+        <h2 class="h2"> Can we automate data science?</h2>
+        <p class="text-justify">In the quest for answering this question we are gathering data scientists' expertise and
+            knowledge, for
+            building a model able to help "citizen data scientists" to use data platforms better. </p>
+
+        <hr>
+
+        <h2 class="h2"> Please read carefully before starting the survey!</h2>
+        <p class="text-justify">In this survey you will be asked to infer
+            <mark>data science task(s)</mark>
+            carried out using
+
+            <mark>imported packages in python scripts</mark>
+            . Following an example of a
+            <mark>task</mark>
+            :
+        </p>
+        <p class="text-justify">If a patient undergoes Bone Density Study, then the
+            <mark>medical task</mark>
+        </p>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+
+                    <th class="danger alert alert-danger" scope="col"><span class="glyphicon glyphicon-remove"
+                                                                            aria-hidden="true"></span> <u>is NOT</u> Bone
+                        Density
+                        Study
+                    </th>
+
+                    <th class="danger alert alert-danger" scope="col"><span class="glyphicon glyphicon-remove"
+                                                                            aria-hidden="true"></span> <u>is NOT</u> X-ray
+                    </th>
+                    <th class="success alert alert-success" scope="col"><span class="glyphicon glyphicon-ok"
+                                                                              aria-hidden="true"></span> <u>is</u> Diagnosis *
+                    </th>
+                </tr>
+                </thead>
+
+            </table>
+        </div>
+        <p>* As you have noticed a task is the more general term. </p>
+        <hr>
+
+
+        <p style="font-size: 16px;"> Privacy Policy </p>
+        <p class="text-justify" style="font-size: 12px;"> We confirm that your e-mail address will be stored in an encrypted form, will not be published or
+            linked to the survey results, will not be used for any further communication, and will not be shared with
+            third parties. <br/> If you are interested in this survey results you can use your e-mail address as ID to
+            login
+            back and check the results when it is published.</p>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+
+
+                    <input type="checkbox" id="agreeToGDPR">
+                    <span style="font-size: 12px" id="agreement"> I Agree to the above privacy policy.</span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div> <!-- row -->
+
+
+        <br/>
+
+
+        <div style="max-width: 300px;" class="input-group ">
+            <span class="input-group-addon" id="sizing-addon">@</span>
+            <input id="voter_id" type="text" class="form-control" placeholder="your e-mail"
+                   aria-describedby="sizing-addon">
+        </div>
+        <br/>
+
+
+        <!-- /input-group -->
+        <!-- v4.0  <div class="form-group">-->
+        <!--<div class="form-check">-->
+        <!--<input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>-->
+        <!--<label class="form-check-label" for="invalidCheck3">-->
+        <!--Agree to terms and conditions-->
+        <!--</label>-->
+        <!--<div class="invalid-feedback">-->
+        <!--You must agree before submitting.-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <div>
+            <p><a id="startsurvey" class="btn btn-primary btn-lg" role="button">Start Survey</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div id="thanks" class="jumbotron">
+
+            <h1>Thank you for sharing your knowledge, very much appreciated! </h1>
+            <p class="h2">An expert survey on tasks of data science, Can we automate data science?</p>
+            <p class="text-justify">In the quest for answering this question we are gathering data scientists' expertise
+                and
+                knowledge, for
+                building a model able to help "citizen data scientists" to use data platforms better. </p>
+            <br/>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                     aria-valuenow="188" aria-valuemin="0" aria-valuemax="188" style="width:100%">
+                    survey completed (Thanks!)
+                </div>
+            </div>
+
+            <br/>
+            <p><a id="sharesurvey" class="btn btn-primary btn-lg" role="button">Share Survey</a>
+            </p>
+
+            <p class="text-justify">To thank you for participating in our survey, we will be giving a 20 euro amazon voucher to 5 randomly selected participants.To enter the draw you need to finish the survey and submit this form. We will select the 5 lucky winners as soons as we have reached 50 participants. Also, if you have any comments on the survey, please include them here.
+Thanks and good luck.
+            </p>
+
+             <p><a id="draw" class="btn btn-primary btn-lg" role="button">Enter Draw</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div>
+        <h2 id='title' class="bg-secondary text-white">
+            An expert survey on tasks of data science <br/>
+            <small id="subtext">can we automate data science?</small>
+            <small><a href="http://www.insight-centre.org" target="_blank" class="label label-info lb-sm">@Insight
+                Centre</a></small>
+            <small><a href="http://www.nuig.ie" target="_blank" class="label label-info lb-sm">@NUIG</a></small>
+
+        </h2>
+    </div>
+
+    <div id="content" class="container-fluid">
+
+
+        <div class="panel panel-info" id="question_card">
+
+            <div id="introducing_imports" class="panel-heading">Given the following imported packages within a data
+                science script in python:
+                <small> you can use google if uncertain</small>
+            </div>
+
+            <div id="question_body" class=" panel-body">
+
+            </div>
+
+            <div id="introducing_answer" class="panel-heading">What task(s) this script carries out?
+                <small> you can add as many tasks as you think are relevant, and you don't have to use suggestions if you think they are not relevant</small>
+            </div>
+            <div id="answer_body" class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group ">
+                            <input id="taskstags" class="typeahead" type="text" value="" data-role="tagsinput"
+                                   placeholder=""/>
+                            <script>
+                    suggestions_builder ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </script>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <button id='dontknow' type="button" value="dontknow" class="btn btn-danger btn-md  ">I don't
+                            know, Next Question ..
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="introducing_confidence" class="panel-heading">Your confidence score for this answer?
+                <small> 1 is the lowest score and 5 is the highest score</small>
+            </div>
+            <div id="conf_body" class="panel-body">
+
+                <div class="row">
+                    <div id="conf_slider_col" class="col-md-6">
+                        <div id="conf_slider">
+                            <input id="sliderinput" type="text" name="confidence"></div>
+                    </div>
+                    <div class="col-md-6">
+
+
+                        <div class="form-group">
+                            <label for="comment">Comments:</label>
+                            <textarea style="max-width: 380px;" class="form-control" rows="1"
+                                      id="comment"></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="panel-footer mt-4">
+                <br class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6"><p>Please be careful before submitting your answer, it can't be changed. </p>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <button id="next" type="button" value="Next" class="btn btn-success btn-md ">Submit, Next
+                            Question
+                            ..
+                        </button>
+
+                    </div>
+
+
+                </div>
+                </br>
+                <div class="row">
+                    <div class="progress">
+                        <div id="progressbar" class="progress-bar progress-bar-success progress-bar-striped"
+                             role="progressbar"
+                             aria-valuenow="188" aria-valuemin="0" aria-valuemax="188" style="width:100%">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"><p>If you wish to take a break, you can exit and login back using your e-mail
+                        address at any time.</p></div>
+
+                    <div class="col-md-6">
+                        <button id="exit" type="button" value="Exit" class="btn btn-danger btn-md ">Exit Survey
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+<div id="footer">
+</div>
+
+
+</html>
